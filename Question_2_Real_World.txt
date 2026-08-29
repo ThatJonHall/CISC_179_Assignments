@@ -1,0 +1,6 @@
+## A good really world example of python's value over C++ is data and web page scraping. 
+## Scraping is fundamentally and I/O operation task where adaptation is far better then speed. 
+## Sure speed is nice, and C++ is great for that. 
+## There is also several tools, like BeautifulSoup that make scraping easy with python.
+## Trying to get the same results in C++ would require you to manual manage memory. 
+## In the case of scrapping, python is more reliable and would save oh so much time. 
