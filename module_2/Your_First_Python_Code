@@ -1,0 +1,33 @@
+
+## Part a - Your First Code
+
+print("All the world's a stage,")
+print("And All the men and women merley players:")
+print("They have their exits and their entrances;")
+print("And one man in his time plays many parts,")
+print("His Acts being seven ages.")
+
+## Part b - Your First Code
+
+print("All the world's a stage, And all the men and women merely players: They have their exits and their entrances; And one man in his time plays many parts, His acts being seven ages.")
+
+## Part c - Your First Code
+
+## The output would be '127.0.0.1.',  Which looks like an i.p address
+
+## Part d - Your First Code
+
+## as simply as my understanding flush, flush is th holding the contents of 'print()' until the end of the code runs.
+## Setting flush=true will cause the print to happen instantly once the print statement is called. 
+## this is handy because if there is a loop that uses the buffer, print() may not happen until the code finsis running.
+## flush=true allows the print() to happen, and the code to still do it thins
+
+## Part e - Your First Code
+
+## Research lead me to the sys.stdout argument that triggers flush. from my beginner understanding, sys.stdout changes the buffer mode.
+
+## Part f - Your First Code
+
+## The first challenge I had was not to use an IDE, I'm so used to getting answers by doing, I had to thing about part c.
+## The biggest challenge was part f, I had to do some research and look into what causes the trigger for print()
+## The other challenge was I didn't want to cut and paste all the text for the print() exercises, I wanted to give my fingers some exercise.
