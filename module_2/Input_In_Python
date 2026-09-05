@@ -1,0 +1,42 @@
+# 1 - User input - a
+
+# I believe this will only work if the user enters an integer 
+weight = imput("Tell me how heavy you are in kilograms") 
+print(weight * 2.2)
+
+#1 - User input - b
+netBalance = float(input("what is the balance on your bill sir or madam? "))
+payment = float(input("how much did you acctully pay? "))
+d1 = int(input("How many days are in this here billing cycle? "))
+d2 = int(input("How many days is be BEFORE the payment cycle? "))
+
+averageDailyBalance = (netBalance * d1 - payment * d2) / d1
+print(averageDailyBalance)
+
+# 1 - User input - c
+
+x = (input("how fast is car X going in MPH")
+y = (input("How fast is car Y going, also in MPH")
+
+hours = input("How many hours have the two cars been driving?")
+minute = input("How many minutes has that been as well?"
+time = hours + minutes / 60
+
+distancex = x * time
+distancey = y * time
+
+distance = distancex ** 2 + distancey ** 2) ** 0.5
+print("The distance between the two cars is " , distance, "miles")
+
+#2 - Troubleshooing.
+# a, should be fine right?
+# should also be fine
+# You can't start with !
+# print = "print me" would rewrite the print functions, thous making print usless from then on.
+# False = 0 is saying false, is true, that breakings things. I also don't think you can write to false, so nothing will happen, or syntax error? I got syntax error
+
+
+# Challenges
+# The biggest challenge was figuring out why my code for part c wasn't working. The after googling my error code, I guess I have to convert to float. 
+# Then after I figured out my issue was float, the use of () really took forever. 
+# Lastly, on C getting the right formulat for a right triagle to play out was difficult, and I don't know if it's right. 
