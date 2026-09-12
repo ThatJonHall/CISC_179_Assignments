@@ -1,1 +1,91 @@
+1 - Com
+# ord() is the function to print a python, it is short for ordinal 
 
+print(ord("d")) 
+#returns is 100
+
+print(ord("D")
+#returns 68
+
+## The toally range of all characters in ASCII is 0-127. ASCII is a 7-bit character encoding system.
+## This means it contains exactly 128 unique character slots. 
+
+## 0-31 is non printable stuff, like new lines and things.
+## 32 is space,
+## 33-47 is puncuation and symbols 
+## 48-79 is 0-9
+## 58-64 is the math stuff
+## 65-90 is uppercase letters
+## 91-96 is brackets and other symbols
+## 97-122 is lowercase letters a-z
+## 123-126 is curly brackets and few other symbols
+## 127 is Delete 
+
+2 -  logical operator 
+10 > 4 and 50 < 100  # True and True is True
+10 < 4 and 50 < 100  # Here first expression is False, the output will be False
+
+10 < 4 or 50 > 100  # False and False is False
+10 > 4 and 50 > 100  # Here first expression is True, the output will be True
+
+10 > 4 # this is True
+not(10 > 4) # this is False
+
+3. Bitwise logical operators 
+
+x = 0b1110 # 0b represents binary number, decimal 14
+y = 0b1011 # decimal 11
+result = x | y # Bitwise or, result in decimal format
+print(result)
+print(bin(result)) # bin() function converts decimal to binary
+
+# Read two numbers
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+
+# Choose the larger number
+if (number1 > number2):
+    larger_number = number1
+else:
+    larger_number = number2
+
+# Print the result
+print("The larger number is:", larger_number)
+
+#the above worked fine for me without floats, so 4.0 no workie. I guess this is when I would need to convert the number
+
+5 - Problem solving 
+# a.
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+number3 = int(input("Enter a third number: "))
+
+# Choose the larger number
+if (number1 > number2 and number1 > number3):
+    larger_number = number1
+elif (number2 > number1 and number2 > number3):
+    larger_number = number2
+else:
+    larger_number = number3
+
+# Print the result
+print("The larger number is:", larger_number)
+
+# B 
+# This is the video that helped me with this part . https://www.youtube.com/watch?v=hrgwf7Br5DU
+
+number = int(input("please type a number: ")) 
+
+if number & 1 == 0:
+  print("Numer is even,")
+else: 
+  print("Numner is odd.")
+
+# I used this for the modulus operator - https://www.youtube.com/watch?v=0t9untqs0BA
+
+number = int(input("Enter a number: "))
+
+if number % 2 == 0:
+  print(str(number) + " is even.")
+else:
+  print(str(number) + " is odd.")
