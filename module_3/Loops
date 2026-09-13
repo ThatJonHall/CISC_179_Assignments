@@ -94,4 +94,10 @@ for i in range(len(letter_in_phrase)):
     print(letter_in_phrase[i] + " = " + str(letter_count[i])) 
 
 
+#Challenges
+#part 2 took a lot of testing, I must of ran in in Thonny like 100 times. I understand list a bit with R
+# but feel I am pushing my knowlege a bit
+
+
+
     
