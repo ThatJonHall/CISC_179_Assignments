@@ -1,0 +1,97 @@
+## 1 - While Loop
+
+## a.
+n0 = int(input("Enter a number "))
+counter = 0
+while n0 != 1:
+  if n0 % 2 == 0:
+    n0 = n0 // 2
+  else:
+    n0 = 3 * n0 + 1
+
+  print(n0)
+  counter = counter + 1
+print("steps = " + str(counter))
+
+## b.
+while true:
+  print("Will this run forever?")
+
+count = 0
+while True:  
+  if count == 10:
+    print("it's done")
+    break
+  else: 
+    count = count +1
+
+
+# c
+# I Think this works now. 
+while True:
+  int_1 = int(input("Please enter a number "))
+  int_2 = int(input("please enter another number "))
+  operator = input("What would you like to do with the numbers + - / or * ?")
+  
+  if operator ==  "+":
+    print(int_1 + int_2) 
+    
+  elif operator == "-":
+    print(int_1 - int_2) 
+    
+  elif operator == "/":
+    print(int_1 / int_2) 
+    
+  elif operator == "*":
+    print(int_1 * int_2) 
+
+  go_on = input("Do you want to continue? ")
+  if go_on == "Y" or go_on == "y":
+    continue
+  else:
+    print("Have a good day.")
+    break
+
+# 2 
+# .isalpha 
+
+# This counts the letters in the phrase. 
+phrase = str(input("Please enter a phrase: "))
+counter = 0
+lettter_in_phrase = []
+letter_count = []
+
+for char in phrase:
+    if char.isalpha():
+        counter = counter + 1
+print("There are " + str(counter) + " Letters in that sentance.")
+    
+
+# This should count everything using a list. 
+phrase = str(input("Please enter a phrase: "))
+counter = 0
+letter_in_phrase = []
+letter_count = []
+
+for char in phrase:
+    if char.isalpha():
+        char = char.lower() 
+        counter = counter + 1
+        
+        if char in letter_in_phrase:
+            
+            position = letter_in_phrase.index(char)
+            letter_count[position] = letter_count[position] + 1
+        
+        else:
+            letter_in_phrase.append(char)
+            letter_count.append(1)
+            
+            
+print("There are " + str(counter) + " Letters in that sentance.")
+
+for i in range(len(letter_in_phrase)):
+    print(letter_in_phrase[i] + " = " + str(letter_count[i])) 
+
+
+    
