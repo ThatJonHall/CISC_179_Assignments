@@ -52,3 +52,18 @@ x = (1,2,3,4)
 x.append(1)
 x[1] = "hello"
 del x[2]
+
+#2a 
+The first type of variable is str but once it's reassigned it would shot up as (type) int
+
+# 2 b 
+# This seems to be the rest feature, where It "holds" a value, often the value you are looking for the passes on the rest.
+# this is handly if you don't know how many items are in your tuple. 
+
+# 2c 
+# In this case the * will hold the center value, so print(a) would print all the first values of x, print(c) the last value, and print(b) would print all the middle values.
+
+# 3 
+# So researching this, I learned that python treats values above 256 as new objects.
+# so postion (1) in my_x is the same as my_y postion (0) of the list list and tuple. 
+# but the other postions are not the same bcause their value is above 256. 
