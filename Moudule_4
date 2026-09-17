@@ -1,0 +1,54 @@
+## :( 
+## I didn't commit changes to this when I first did it and closed my broswer. My, this is the best from
+# What I can recover from my IDE, Thonny
+
+# 1a
+
+input_1 = int(input("please type a number: "))
+input_2 = int(input("please type a number: "))
+input_3 = int(input("please type a number: "))
+input_4 = int(input("please type a number: "))
+input_5 = int(input("please type a number: "))
+
+my_tuple = (input_1, input_2, input_3, input_4, input_5)
+print(my_tuple)
+
+# 1b
+
+my_tuple = (1, 2, 3)
+my_tuple[0] = 99
+
+# 1c 
+
+my_tuple = (1,2,3,4,3,2,1,2,3,5,4,3,2,1)
+
+number_in_tuple = []
+number_count = []
+
+for char in my_tuple:
+    if char in number_in_tuple:
+        position = number_in_tuple.index(char)
+        number_count[position] = number_count[position] + 1
+    else:
+        number_in_tuple.append(char)
+        number_count.append(1)
+
+for i in range(len(number_in_tuple)):
+    print(str(number_in_tuple[i]) + " appears " + str(number_count[i]) + " times")
+
+# 1d
+
+my_tuple = (1, 2, 3, 4, 3, 2, 1, 2, 3, 5, 4, 3, 2, 1)
+print(id(my_tuple))
+
+my_tuple = my_tuple + my_tuple
+
+print(id(my_tuple))
+
+# 1e 
+
+
+x = (1,2,3,4)
+x.append(1)
+x[1] = "hello"
+del x[2]
