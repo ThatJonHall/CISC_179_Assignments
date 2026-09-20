@@ -1,1 +1,101 @@
+## Note - I closed this tab (along with all the other tabs for the module) without comminting changes. 
+## The following is what I can find from 
 
+## 1a 
+my_lame_dictionary = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 6, "g": 7, "h": 8, "i": 9, "j": 10}
+
+print(type(my_lame_dictionary))
+print(my_lame_dictionary)
+
+## 1b
+my_user_dict = {}
+
+while True:
+    big_ask = input("would you like to continue? 'Y' or 'N' ")
+
+    if big_ask.lower() == "n":
+        print("Have a nice day.")
+        break
+    else:
+        my_ask = input("please type a number or letter: ")
+        my_user_dict[my_ask] = my_ask
+
+# 1c
+
+a = [("a", 1), ("b", 2), ("a", 5)]
+da_key = []
+
+for pair in a:
+    key = pair[0]
+    if key in da_key:
+        print("Duplicate key found: " + key)
+    else:
+        da_key.append(key)
+# 1 d 
+
+data = [('Name', 'Sarah Connor'),
+        ('Date of birth', '1 Jan 1980'),
+        ('Address', '1000 Black Mountain Drive', 92126),
+        ('Name', 'Jim Hawkins')]
+
+result_dict = {}
+
+for pair in data:
+    key = pair[0]
+    value = pair[1]
+    
+    if key in result_dict:
+        counter = 1
+        new_key = key + str(counter)
+        while new_key in result_dict:
+            counter = counter + 1
+            new_key = key + str(counter)
+        result_dict[new_key] = value
+    else:
+        result_dict[key] = value
+        
+print(result_dict)
+
+# 1 e 
+# split
+
+text = ("The tiger (Panthera tigris) is a large cat and a member of the genus Panthera native to Asia. It has a powerful, muscular body with a large head and paws, a long tail and orange fur with black, mostly vertical stripes. It is traditionally classified into nine recent subspecies, though some recognise only two subspecies, mainland Asian tigers and the island tigers of the Sunda Islands.")
+words = text.split()
+print(words)
+
+#2a 
+# for 
+d_orig = {123:"Coconut"}
+d_copy = d_orig
+print(d_orig)
+print(d_copy)
+
+{123: 'Coconut'}
+{123: 'Coconut'}
+#adding .copy() to the end of d_copy = d_orig will fix our problem. 
+
+#so..
+d_orig = {123:"Coconut"}
+d_copy = d_orig.copy()
+print(d_orig)
+print(d_copy)
+
+{123: 'Coconut'}
+{123: 'Coconut'}
+
+#2b
+# .copy() creates a new object in memory and when the variable it recalled it points to that new, unique address.
+
+#2c 
+
+I made a {} with 
+my_dict = {}
+my_dict[(1, 2, 3)] = "test"
+print(my_dict)
+
+This uses a list as a key, a list is mutable and can be change outsid edictionaly functions. This causes a no no. 
+
+# Challenges
+
+#I'm getting the main challenges I've alway be getting, format errors. the the ) is hard fro me, and when to use the : 
+# I also found the loops difficult in the part, but I do feel I'm getting it a bit more. 
