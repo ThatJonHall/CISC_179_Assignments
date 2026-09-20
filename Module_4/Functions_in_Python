@@ -1,1 +1,71 @@
 #Functions_in_Python
+
+# 1a 
+
+def convert_kpl_to_mpg(kpl):
+    return kpl * 2.352145
+
+def convert_mpg_to_kpl(mpg):
+    return mpg * 0.425144
+
+while True:
+    start = input("Press '1' to convert KPL to MPG or '2' for MPG to KPL: ")
+
+    if start == "1":
+        kpl_input = int(input("How many kilometers per liter? "))
+        result = convert_kpl_to_mpg(kpl_input)
+        print(result)
+        break
+    elif start == "2":
+        mpg_input = int(input("How many kilometers per liter? "))
+        result = convert_mpg_to_kpl(mpg_input)
+        print(result)
+        break
+    else:
+        print ("it's 1 or 2, not that hard")
+
+# 1b
+
+def crazy_amount(*args):
+    print(args)
+    print(args[::-1])
+
+def crazy_amount(*args):
+    print(args[::-1])
+
+ask = input("Type several things, separated by spaces: ")
+pieces = ask.split()
+crazy_amount(*pieces)
+
+#1c 
+
+def modify_dict(some_dict):
+    some_dict["new_key"] = "new_value"
+
+my_data = {"a": 1}
+modify_dict(my_data)
+print(my_data). 
+
+# if you run the above, you arn't changing the key, but just getting a tuple list that it just adding the vaules up. 
+
+
+# 1d
+# the global would change that x = 5 to x = 2 outside the function, before with x = 3 it was only changes within the function.
+
+#Toubleshooting
+
+#I took off the extra * from def my_func(a,b,**c):
+# Research tells me that ** is for stored defined data like x=3, not just 3. *c would store all past the other peramteters. 
+
+#part 2 
+def my_func_global():
+    global x
+    x = 100
+
+x = 10
+my_func_global()
+print(x)
+# I added a global inside the function, this creates a new value for x outside the function, globaly. Before it was only uses sepratly inside the function.
+
+
+
