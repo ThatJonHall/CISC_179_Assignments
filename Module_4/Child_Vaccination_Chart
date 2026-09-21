@@ -1,3 +1,22 @@
 #Child Vaccination Chart
 
 # 1 insert Function
+
+patient = {}
+
+def insert(first_name, last_name, birth_month):
+    record_num = len(patient) + 1
+    child_record = {"first_name": first_name, "last_name": last_name, "birth_month": birth_month}
+    patient[record_num] = child_record
+
+# 2 I believe my part 1 has a nest in it, no? I'm going to put it here again I guess. 
+
+patient = {}
+
+def insert(first_name, last_name, birth_month):
+    record_num = len(patient) + 1
+    child_record = {"first_name": first_name, "last_name": last_name, "birth_month": birth_month}
+    patient[record_num] = child_record
+
+insert("Mitch", "child", 1)
+print(patient)
