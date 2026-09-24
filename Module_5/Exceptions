@@ -15,3 +15,16 @@
 
 #part 3
 
+try:
+    value = int(input("Enter an integer: "))
+    print("You entered:", value)
+    # risky code
+except ValueError:
+    print("That's not a natural number, it's unnatural!")
+    # what to do if that specific error happens
+
+#part 4 
+|input          | lines / branches executed         | Lines Skipped |    Exception
+|2              | All the try and Print("D') will run | Both exceptions will be skipped | No exceptions
+|0              | Print a and b will print, after input is 0 it will print ZeroDividionError except line print("D")| Zero DivisionError 
+|Hello          |A will print, input will fail not print, only ValueError excpt line + print("D"). | ValueError exption
