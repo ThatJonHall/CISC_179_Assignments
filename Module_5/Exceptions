@@ -1,0 +1,17 @@
+# Exceptions
+#part 1
+
+|Situation         | Bad input or bug? | Reasoning 
+|The program expects an integer but the user enters 'hello' | Bad input | It was coding for an input, but wans't properly set to handle non integers
+|The program write 'prin()' instead of print | Bug | A simple mis type of the keyboard, a spelling error
+|The program divides by a value entered by the user, and the unser enters '0' | Bug | the program wasn't set to handle ZeroDivisionError
+
+#part 2 
+
+#1 - input. That's the first thing that happens when a "bad" input is made.
+#2 int() Is designed to tahe a string that prepresents a whole number. Anything that's not a whole number be fail with this is performed.
+#3 two possible errors, ValueError when the input can't be converted to a whole number, or ZeroDivisionError, when a zero is entered and that causes a math error.
+#4 if there's a zero entered it would be a ZeroDivisionError, casuse you can't divide by 0 in math you get "undefined"
+
+#part 3
+
