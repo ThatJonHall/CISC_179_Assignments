@@ -133,7 +133,7 @@ quantity = int(input("Quantity: "))
 result = calculate_total(price, quantity)
 print("Total:", result)
 
-# part 11
+# part 12
 
 | input 1 | input 2 | expected path | expected result | actual result | pass/fail
 | - 2     | 4.  | No issues, print my "try" branch | -.5  | -0.5 | pass
@@ -153,6 +153,14 @@ except ZeroDivisionError:
     print("An integer can't be Zero, you shoul know this.")
 
 
+# Analysis and Reflection 
+
+# an exception is a way of catching a error when it occures. Istead of crashing the system, it Identifies the error so it can be fixed.
+# After a statement in a try block is called it "skips" over the remaining statements as that error isn't called.
+# Separate exceptions are a great way to identify the specific error type, it help narrow down the root problem.
+# A exception will only catch program errors, not logical errors. So it's a good tool but not without it's flaws. 
+# it's importatmt to test every path as a way to make sure they work, and your probram has a "route" to get to these errrors/ execptions.
+# The print debu is a great way to let you know what exception was triggered, and why. It's like a note to youself.
 
 
 
