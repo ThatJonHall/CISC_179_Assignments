@@ -28,3 +28,134 @@ except ValueError:
 |2              | All the try and Print("D') will run | Both exceptions will be skipped | No exceptions
 |0              | Print a and b will print, after input is 0 it will print ZeroDividionError except line print("D")| Zero DivisionError 
 |Hello          |A will print, input will fail not print, only ValueError excpt line + print("D"). | ValueError exption
+
+#part 5
+
+try:
+    ask_number = int(input("Please type in an integer."))
+    recip = str(1 / ask_number)
+    print("The reciprocal of that numner is " + recip)
+except ValueError:
+    print("That's not a number dummy.")
+except ZeroDivisionError:
+    print("An integer can't be Zero, you shoul know this.")
+
+# The except block catches the error, puts the code in it's place then prevents the program from crashing. only one is called because one error type is present.
+
+#part 6
+
+first is a ValueError, from trying to put a string in as an integer. Second is a ZeroDivisionError, from trying to divide 10 by 0.
+C is a type error from trying to use a none whole number, list need a whole number to represent the place of an item. 
+Lastly D is an AttributeError from trying to ouse an object (depend) doest work, or depend on list.
+
+#Part 7 
+1. The final except is a 'bare except' it will catch all other errors that the other excepts havn't covered yet
+2. This would execute if there's a error that would end that program, unless a diffrent except catches that error first.
+3. this branch has to appear last because it would first first, at any error, overriding the named except, which isn't helpful for debuggin.
+4. Specific exception are just that, specific in identifying to error, where a bare except just tells you an error occured, not why it occured. 
+
+#Part 8
+1. Syntax error, from missing the : 
+2. It's missing the :, a mistake I've made a million times.
+3. Put it in a try loop, 
+try:
+    if value > 0
+        print("Positive")
+except:
+    print("something went wrong")
+
+This told me - SyntaxError: expected ':'
+
+#part 9 
+| test input | expected path | expected resule | actual result | Pass/Fail
+| 1          | if/ positive  | Positive        | Positive.     | Pass
+| -1.        | elif / Negative| Negative       | Negative.     | Pass
+| 0.         | Else.          | Zero            | Zero         | Pass
+
+#one successful test may not work, because it can only test one thing. There may be a way to trigger a fail. A user will find that way.
+
+#Part 10
+
+1 After using 0, the program did work and give me no errors
+2 Branch 2, or elif has a typo for 'prin'
+3 a negative number, will give a NameError
+4. this shows that through normal usage, the errors only resent themselfs when they are called. 
+
+here's the corrected code.
+
+value = float(input("Enter a number: "))
+
+if value > 0:
+    print("Positive")
+elif value < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+# Part 11 - 
+
+1. 12.50 * 4 = 50 
+2 The program gave me 16.5
+3 def calculate_total(price, quantity):
+    total = price + quantity
+    print("function price", + price)
+    print("function quantity", + quantity)
+    return total
+
+price = float(input("Price: "))
+quantity = int(input("Quantity: "))
+
+result = calculate_total(price, quantity)
+print("Total:", result)
+
+4. The info provided did show me the proper values made it to the varriables. 
+5. the logical error is total = price + quantity should be total = price * quantity.
+6. def calculate_total(price, quantity):
+    total = price * quantity
+    print("function price", + price)
+    print("function quantity", + quantity)
+    return total
+
+price = float(input("Price: "))
+quantity = int(input("Quantity: "))
+
+result = calculate_total(price, quantity)
+print("Total:", result)
+7. def calculate_total(price, quantity):
+    total = price * quantity
+    #print("function price", + price)
+    #print("function quantity", + quantity)
+    return total
+
+price = float(input("Price: "))
+quantity = int(input("Quantity: "))
+
+result = calculate_total(price, quantity)
+print("Total:", result)
+
+# part 11
+
+| input 1 | input 2 | expected path | expected result | actual result | pass/fail
+| - 2     | 4.  | No issues, print my "try" branch | -.5  | -0.5 | pass
+| pie | cake | will give error to value error path | fail on valueerror | failed before asking cale | fail;
+| 0 | 0 | zerodivsion error | failed before asking second 0 | asked second zero, then zerodivionerror | fail
+| 0 | cake | value error first | will give a valueerror | gave vlaue error | fail
+
+
+try:
+    ask_number1 = int(input("Please type in an integer."))
+    ask_number2 = int(input("Please type in an another integer."))
+    product = (ask_number1 / ask_number2)
+    print(str(ask_number1) + " divided by " + str(ask_number2) + " = " + str(product))
+except ValueError:
+    print("That's not a number dummy.")
+except ZeroDivisionError:
+    print("An integer can't be Zero, you shoul know this.")
+
+
+
+
+
+
+
+    
